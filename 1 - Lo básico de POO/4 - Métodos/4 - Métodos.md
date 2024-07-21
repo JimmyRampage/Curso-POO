@@ -1,4 +1,4 @@
-# ¿Que son los metodos?
+# ¿Que son los métodos?
 
 Los métodos en POO son funciones que se definen dentro de una clase. Estos métodos representan las acciones y/o comportamientos que un objeto de esa clase puede realizar.
 
@@ -32,7 +32,7 @@ Este método tiene un parámetro '**obligatorio**' `self`, porque es la forma en
 
 El parámetro `self` es una convención en Python. Es el primer parámetro que se pasa a cualquier método de instancia. Python pasará automáticamente el objeto que está invocando el método al parámetro `self`. Por lo tanto, `self` es una referencia al objeto de la clase que está invocando el método. Esto permite que el método acceda a los atributos y otros métodos del objeto.
 
-En este caso, `self.modelo` se refiere al atributo modelo del objeto que está invocando el método `llamar()`. Entonces, si tienes un objeto `cel1` de una clase `Celular` con un atributo modelo, y llamas a `cel1.llamar()`.
+En este caso, `self.modelo` se refiere al atributo `modelo` del objeto que está invocando el método `llamar()`. Entonces, si tienes un objeto `cel1` de una clase `Celular` con un atributo modelo, y llamas a `cel1.llamar()`.
 
 ```py
 cel1 = Celular('Apple', 'iPhone 15', '48MP')

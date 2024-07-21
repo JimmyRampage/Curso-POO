@@ -8,7 +8,7 @@ Por ejemplo, si tenemos una clase `Celular`, los atributos podrían ser `color`,
 
 ¿Que ocurre si nosotros queremos definir el contenido de las variables al momento de instanciar un objeto?
 
-Esto se resuelve con una función inicial (o método constructor) `def __init__(self):`.
+Esto se resuelve con una función inicial (o método constructor) `__init__(self):`.
 
 ```py
 class Celular:
@@ -21,7 +21,7 @@ class Celular:
 Esta función se ejecuta automáticamente al instanciar un objeto, y registra los parámetros entregados en las variables (atributos).
 
 >[!NOTE]
->El parámetro `self` no se entrega
+>El parámetro self no se pasa al llamar al método; es agregado automáticamente por Python y se refiere a la instancia que se está creando.
 
 ### Instanciando un objeto
 
@@ -41,3 +41,31 @@ print(cel2.modelo)
 Apple
 S23
 ```
+
+## Atributos de clase vs. atributos de instancia
+
+Es importante distinguir entre atributos de clase y atributos de instancia:
+
+* **Atributos de clase**: Son compartidos por todas las instancias de la clase. Se definen directamente dentro de la clase y fuera de cualquier método.
+
+* **Atributos de instancia**: Son específicos de cada instancia de la clase. Se definen dentro del método `__init__` usando self.
+
+```py
+class Celular:
+    categoria = 'Electrónica'
+
+    def __init__(self, marca, modelo, camera):
+        self.marca = marca
+        self.modelo = modelo
+        self.camera = camera
+
+print(Celular.categoria)
+
+cel1 = Celular('Apple', 'iPhone 15', '48MP')
+cel2 = Celular('Samsung', 'S23', '48MP')
+print(cel1.marca)
+print(cel2.modelo)
+```
+
+>[!IMPORTANT]
+>Modificar un atributo de clase afecta a todas las instancias de esa clase, mientras que modificar un atributo de instancia solo afecta a esa instancia específica.
