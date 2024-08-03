@@ -2,7 +2,10 @@
 
 Es un paradigma de programación que utiliza objetos y representa cosas de la vida real y sus interacciones.
 
-En POO, los objetos son instancias de clases. Una clase actúa como un molde que define las propiedades (atributos) y las acciones (métodos) que sus objetos pueden tener.
+En POO, los objetos son instancias de clases, algo así como la "creación" del objeto a partir de una clase. Una clase actúa como un molde que define las propiedades (atributos) y las acciones (métodos) que sus objetos pueden tener.
+
+>[!TIP]
+>En definitiva, la Programación Orientada a Objetos (POO) es una metodología que imita el comportamiento de los objetos en la vida real, los cuales tienen características (atributos) y realizan acciones (métodos).
 
 La POO se centra en el encapsulamiento, la herencia y el polimorfismo, que facilitan la reutilización del código, la abstracción y la modularidad.
 

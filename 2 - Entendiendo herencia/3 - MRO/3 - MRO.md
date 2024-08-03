@@ -1,6 +1,6 @@
 # ¿Que es el MRO?
 
-MRO en python es Method Resolution Order. Es el orden en que Python busca en las clases base de un objeto para encontrar un método o atributo durante la ejecución.
+MRO significa Method Resolution Order. Es el orden en que Python busca en las clases base de un objeto para encontrar un método o atributo durante la ejecución.
 
 En Python, el MRO define el orden en el que se buscan las clases base cuando se ejecuta un método. Primero, se busca el método o atributo dentro de una clase y luego sigue el orden que especificamos al heredar. Este orden también se llama Linearización de una clase y el conjunto de reglas se llama MRO.
 

@@ -33,4 +33,6 @@ cta_mara.retirar(2000)
 
 cta_jimmy = CuentaBancaria('Jimmy', 10000)
 
+cta_jimmy.saldo_actual()
+
 cta_jimmy.retirar(10001)

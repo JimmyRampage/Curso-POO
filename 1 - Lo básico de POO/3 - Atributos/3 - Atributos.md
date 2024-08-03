@@ -1,6 +1,6 @@
 # ¿Que son los atributos?
 
-Los atributos en la Programación Orientada a Objetos (POO) en Python son variables que se definen dentro de una clase. Estos atributos representan el estado o las características de un objeto de esa clase.
+Los atributos en la Programación Orientada a Objetos son variables que se definen dentro de una clase. Estos atributos representan el estado o las características de un objeto de esa clase.
 
 Por ejemplo, si tenemos una clase `Celular`, los atributos podrían ser `color`, `marca`, `modelo`, etc. Cada objeto o instancia de la clase `Celular` tendrá sus propios valores para estos atributos.
 
@@ -9,6 +9,9 @@ Por ejemplo, si tenemos una clase `Celular`, los atributos podrían ser `color`,
 ¿Que ocurre si nosotros queremos definir el contenido de las variables al momento de instanciar un objeto?
 
 Esto se resuelve con una función inicial (o método constructor) `__init__(self):`.
+
+>[!NOTE]
+>`self` Mientras use self dentro de un método puedo modificar los valores de sus atributos.
 
 ```py
 class Celular:
@@ -42,11 +45,11 @@ Apple
 S23
 ```
 
-## Atributos de clase vs. atributos de instancia
+## Atributos de clase o estáticos vs. atributos de instancia
 
 Es importante distinguir entre atributos de clase y atributos de instancia:
 
-* **Atributos de clase**: Son compartidos por todas las instancias de la clase. Se definen directamente dentro de la clase y fuera de cualquier método.
+* **Atributos de clase o estáticos**: Son compartidos por todas las instancias de la clase. Se definen directamente dentro de la clase y fuera de cualquier método. En algunos lenguajes de programación, los atributos estáticos son sinónimos de los atributos de clase. Sin embargo, en otros lenguajes, los atributos estáticos pueden tener un comportamiento ligeramente diferente, como ser accesibles sin necesidad de crear una instancia de la clase.
 
 * **Atributos de instancia**: Son específicos de cada instancia de la clase. Se definen dentro del método `__init__` usando self.
 

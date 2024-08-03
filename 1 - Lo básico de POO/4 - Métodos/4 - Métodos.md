@@ -2,7 +2,7 @@
 
 Los métodos en POO son funciones que se definen dentro de una clase. Estos métodos representan las acciones y/o comportamientos que un objeto de esa clase puede realizar.
 
-Por ejemplo, si tenemos una clase `Celular`, los métodos podrían ser `llamar()`, `cortar()`, `navegar()`, etc. Cada objeto de la clase Celular puede realizar estas acciones.
+Por ejemplo, si tenemos una clase `Celular`, los métodos podrían ser `llamar()`, `cortar()`, `navegar()`, `fotografiar()`, etc. Cada objeto de la clase Celular puede realizar estas acciones.
 
 ## Creando un método
 
@@ -26,7 +26,7 @@ def llamar(self):
 ```
 
 >[!NOTE]
->Así como se ve, es una función, pero al estar dentro de una clase, ya sabemos que pasa a llamarse método.
+>Así como se ve, es una función `llamar(self)`, pero al estar dentro de una clase, ya sabemos que pasa a llamarse método.
 
 Este método tiene un parámetro '**obligatorio**' `self`, porque es la forma en que el python hace referencia al objeto mismo que esta ejecutando el método.
 
@@ -46,3 +46,13 @@ cel1.cortar()
 Estas llamando desde un iPhone 15...
 Terminaste la llamada desde un iPhone 15...
 ```
+
+>[!IMPORTANT]
+>Existen diferentes tipos de métodos, como lo son:
+>
+> * Métodos de Instancia
+> * Métodos de Clase
+> * Métodos Estáticos
+> * Métodos Mágicos | Especiales | Dunder
+> * Métodos Privados
+> * Métodos de Propiedad
